@@ -12,5 +12,13 @@ class HistoryActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityHistoryBinding.inflate(layoutInflater)
         setContentView(binding?.root)
+
+        // Set upe tool bar on history page
+        setSupportActionBar(binding?.tbHistory)
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+        supportActionBar?.title = "History"
+        binding?.tbHistory?.setNavigationOnClickListener {
+            onBackPressed()
+        }
     }
 }

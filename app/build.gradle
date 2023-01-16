@@ -1,11 +1,12 @@
 plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
+    id 'kotlin-kapt'
 }
 
 android {
     namespace 'ep.udemy.a7minutesworkout'
-    compileSdk 32
+    compileSdk 33
 
     defaultConfig {
         applicationId "ep.udemy.a7minutesworkout"
@@ -36,6 +37,13 @@ android {
 }
 
 dependencies {
+
+    implementation 'androidx.room:room-common:2.5.0'
+    kapt "androidx.room:room-compiler:2.5.0"
+
+    implementation 'androidx.room:room-ktx:2.5.0'
+    implementation 'androidx.activity:activity-ktx:1.6.1'
+
 
     implementation 'androidx.core:core-ktx:1.7.0'
     implementation 'androidx.appcompat:appcompat:1.5.1'

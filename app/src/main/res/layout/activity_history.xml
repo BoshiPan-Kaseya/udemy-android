@@ -6,4 +6,14 @@
     android:layout_height="match_parent"
     tools:context=".HistoryActivity">
 
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tbHistory"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:theme="@style/ToolbarTheme"
+        android:background="@color/white"
+        app:titleTextColor="@color/colorPrimary"
+        />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
